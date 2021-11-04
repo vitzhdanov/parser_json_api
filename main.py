@@ -51,7 +51,7 @@ def check_path(users_tasks):
 
 def result(user):
     # Создаём файл с именем пользовател и записываем необходимые данные
-    with open(f"tasks/{user['user']['username']}.txt", "w") as file:
+    with open(f"tasks/{user['user']['username']}.txt", "w", encoding='utf-8') as file:
         try:
             file.write(
                 f"Отчет для {user['user']['name']}.\n"
